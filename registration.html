@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Hotel Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/zedland1.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="config.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+	<script src="share.js"></script>
+	<script src="createhotellist.js"></script>
+	<script src="showhotel.js"></script>
+	<script src="imageswipe.js"></script>
+	<script src="jquery.validate.js"></script>
+	<script src="validate_rules.js"></script>
+</head> 
+	<body>
+		<div data-role="page" id="login" data-title="login">
+		
+			<div data-role="header">
+				<a href="#home" data-icon="home" data-transition="slidefade" data-direction="reverse">Home</a>
+				<a href="#"     data-icon="back" data-transition="slidefade" data-direction="reverse" data-rel="back">Back</a>
+				<h1>ZetUniRoom</h1>
+			</div>
+
+			<div data-role="content">
+			
+				<h2>Account page</h2>
+
+				<form action="confirmation.html" method="post" id="form4">
+				
+						<div class="ui-field-contain">
+							<label for="name" class="ui-hidden-accessible">Student No:</label>
+	     					<input data-clear-btn="true" name="studentNo" id="studentNo" placeholder="Your Student No" value="" type="text">
+     					</div>
+						<div class="ui-field-contain">
+							<label for="name" class="ui-hidden-accessible">Name:</label>
+	     					<input data-clear-btn="true" name="name" id="name" placeholder="Your name" value="" type="text">
+     					</div>
+						<div class="ui-field-contain">
+	     					<label for="surname" class="ui-hidden-accessible">Surname:</label>
+	     					<input data-clear-btn="true" name="surname" id="surname" placeholder="Your surname" value="" type="text">
+     					</div>
+						<div class="ui-field-contain">
+						    <label for="select-native-1">Programme:</label>
+						    <select name="select-native-1" id="select-native-1">
+						        <option value="1">Computing</option>
+						        <option value="2">Web Technologies</option>
+						        <option value="3">Information Systems</option>
+						        <option value="4">IT Systems Management</option>
+						    </select>
+						</div>
+						<div class="ui-field-contain">
+	     					<label for="date" class="ui-hidden-accessible">Start date:</label>
+	     					<input data-clear-btn="true" data-role="date" type="date" name="date" id="date" placeholder="Start date: 18/02/1980">
+     					</div>
+						<fieldset data-role="controlgroup" data-type="horizontal">
+							<legend>Requires:</legend>
+							<input name="radio-choice-h-2" id="radio-choice-h-2a" value="roomshare" checked="checked" type="radio">
+							<label for="radio-choice-h-2a">roomshare</label>
+							<input name="radio-choice-h-2" id="radio-choice-h-2b" value="flatshare" type="radio">
+							<label for="radio-choice-h-2b">room</label>
+							<input name="radio-choice-h-2" id="radio-choice-h-2c" value="flat" type="radio">
+							<label for="radio-choice-h-2c">flat/house</label>
+						</fieldset>
+						<div class="ui-field-contain">
+							<input type="submit" class="ui-btn" value="Submit" data-mini="true">
+						</div>
+				</form>
+			</div>
+
+			<div data-role="footer" class="footer" data-position="fixed">
+				<div data-role="navbar" data-id="footernav">
+					<ul>
+						<li><a href="about.html" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-top">About</a></li>
+						<li><a href="contact.html" class="ui-btn ui-icon-mail ui-corner-all ui-btn-icon-top">Contact</a></li>
+						<li><a href="login.html" class="ui-state-presist ui-btn-active ui-btn ui-icon-user ui-corner-all ui-btn-icon-top">Account</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

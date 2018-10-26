@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Hotel Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/zedland1.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="config.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+	<script src="share.js"></script>
+	<script src="createhotellist.js"></script>
+	<script src="showhotel.js"></script>
+	<script src="imageswipe.js"></script>
+	<script src="jquery.validate.js"></script>
+	<script src="validate_rules.js"></script>
+</head>
+	<body>
+		<div data-role="page" id="home" data-title="home">           <!-- home page -->
+			<div data-role="header">
+				<h1>ZetUniRoom</h1>
+			</div> 
+
+			<div data-role="content">
+				<figure id="topimg">
+					<img src="images/unilogosmall.png" alt="Zetland University ZetUniRoom app logo">
+				</figure>	
+				<h2 class="txt-centred h2-spacing1">Student accomodation finder</h2>
+				
+				<form action="search.html" method="post" id="form1">
+
+					<div data-role="fieldcontain">
+						<label for="location" class="ui-hidden-accessible">Location:</label>
+						<input name="location" type="text" id="location" data-mini="true" placeholder="Location">
+					</div>
+					<fieldset data-role="controlgroup" data-type="horizontal">
+				        <legend class="ui-hidden-accessible">Property type:</legend>
+				        <input name="radio-choice-h-2" id="radio-choice-h-2a" value="roomshare" checked="checked" type="radio">
+				        <label for="radio-choice-h-2a">roomshare</label>
+				        <input name="radio-choice-h-2" id="radio-choice-h-2b" value="flatshare" type="radio">
+				        <label for="radio-choice-h-2b">flatshare</label>
+				        <input name="radio-choice-h-2" id="radio-choice-h-2c" value="flat" type="radio">
+				        <label for="radio-choice-h-2c">flat/house</label>
+				    </fieldset>
+				    <div data-role="rangeslider">
+				        <label for="range-1a">Price weekly:</label>
+				        <input name="range-1a" id="range-1a" min="50" max="500" value="100" type="range">
+				        <label for="range-1b">Price range:</label>
+				        <input name="range-1b" id="range-1b" min="50" max="500" value="250" type="range">
+				    </div>
+				    <div data-role="fieldcontain"> 
+						<input type="submit" class="ui-btn" value="Submit" data-mini="true">
+				 	</div>
+
+				</form>
+
+			</div>
+
+			<div data-role="footer" class="footer" data-position="fixed">
+				<div data-role="navbar" data-id="footernav">
+					<ul>
+						<li><a href="about.html" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-top">About</a></li>
+						<li><a href="contact.html" class="ui-btn ui-icon-mail ui-corner-all ui-btn-icon-top">Contact</a></li>
+						<li><a href="login.html" class="ui-btn ui-icon-user ui-corner-all ui-btn-icon-top">Account</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

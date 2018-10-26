@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Hotel Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/zedland1.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="config.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+	<script src="share.js"></script>
+	<script src="createhotellist.js"></script>
+	<script src="showhotel.js"></script>
+	<script src="imageswipe.js"></script>
+	<script src="jquery.validate.js"></script>
+	<script src="validate_rules.js"></script>
+</head>
+<body>
+	<div data-role="page" id="hotelpage">
+		<div data-role="header">
+			<a href="#home" data-icon="home" data-transition="slidefade" data-direction="reverse">Home</a>
+			<a href="#"     data-icon="back" data-transition="slidefade" data-direction="reverse" data-rel="back">Back</a>
+			<h1>Zedland Hotels</h1>
+		</div>
+		<div data-role="content">
+			<h2 id="hoteltitle"></h2>
+			<a href="#imagepopup" id="image-property" data-rel="popup">
+				<p class="img-left" id="image-main"></p>
+			</a>
+			<div id="hotelid"></div>
+			<div id="contentArea"></div>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="map.html" data-icon="location">location</a></li>
+					<li><a href="myhotels.html" data-icon="grid">My Favs</a></li>
+					<li><a href="#confirmpopup" data-icon="heart" id="addbtn" data-rel="popup">Add Favs</a></li>
+					<li><a href="login.html" data-icon="gear">Reserve</a></li>
+				</ul>
+			</div>
+			
+			<div data-role="popup" id="confirmpopup" data-theme="b" data-dismissible="false" data-history="false" data-position-to="window">
+				<div data-role="header">
+					<h1 id="addhotelinfopopup">Infor about hotel</h1>
+				</div>
+				<div data-role="content">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right popupCloseIcon">Close</a>
+					<a href="#" data-role="button" data-rel="back">OK</a>
+					<!--a href="#" data-role="button" data-rel="back">Cancel</a-->
+				</div>
+			</div>
+			<div data-role="popup" id="imagepopup" data-theme="b" data-dismissible="false" data-history="false" data-position-to="window">
+				<div data-role="header">
+					<h1 id="imageinfopopup">Infor about image</h1>
+				</div>
+				<div data-role="content">
+					<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right popupCloseIcon">Close</a>
+					<img src="images/1-1.jpg" id="imagepopupid" alt="property house 1 image">
+					<!--a href="#" data-role="button" data-rel="back">OK</a-->
+					<!--a href="#" data-role="button" data-rel="back">Cancel</a-->
+				</div>
+			</div>
+			
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-id="footernav">
+				<ul>
+					<li><a href="about.html" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-top">About</a></li>
+					<li><a href="contact.html" class="ui-btn ui-icon-mail ui-corner-all ui-btn-icon-top">Contact</a></li>
+					<li><a href="login.html" class="ui-btn ui-icon-user ui-corner-all ui-btn-icon-top">Account</a></li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Zedland Hotel Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/zedland1.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="config.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="hotelmap.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="hotelmap.js"></script>
+	<script src="addhotel.js"></script>
+	<script src="gethotel.js"></script>
+	<script src="share.js"></script>
+	<script src="createhotellist.js"></script>
+	<script src="showhotel.js"></script>
+	<script src="imageswipe.js"></script>
+	<script src="jquery.validate.js"></script>
+	<script src="validate_rules.js"></script>
+</head> 
+	<body>
+		<div data-role="page" id="login" data-title="login">
+			<div data-role="header">
+				<a href="#home" data-icon="home" data-transition="slidefade" data-direction="reverse">Home</a>
+				<a href="#"     data-icon="back" data-transition="slidefade" data-direction="reverse" data-rel="back">Back</a>
+				<h1>ZetUniRoom</h1>
+			</div>
+
+			<div data-role="content">
+				<h2>Account page</h2>
+				<form action="registration.html" method="post" id="form2">
+				    <fieldset data-role="collapsible" data-collapsed="false">
+				    	
+					        <legend>Please login here!</legend>
+					        <div data-role="fieldcontain">
+						        <label for="user1" class="ui-hidden-accessible">User Name:</label>
+						        <input type="text" name="user1" id="user1" data-mini="true" placeholder="Username" required data-clear-btn="true">
+					    	</div>
+					    	<div data-role="fieldcontain">
+						        <label for="pass1" class="ui-hidden-accessible">Password:</label>
+								<input type="password" name="pass1" id="pass1" data-mini="true" placeholder="Password" required data-clear-btn="true">
+	     					</div>
+	     					<div data-role="fieldcontain">
+		     					<input type="submit" class="ui-btn" value="Submit" data-mini="true">
+	     					</div>
+     					
+				    </fieldset>
+				</form>
+
+				<form action="accountcreated.html" method="post" id="form3">
+					<fieldset data-role="collapsible">
+						<legend>Please register here!</legend>
+						<div class="ui-field-contain">
+						    <label for="email2" class="ui-hidden-accessible">Email: </label>
+						    <input data-clear-btn="true" name="email2" id="email2" value="" type="email" data-mini="true" placeholder="email: sp.am@op.pl">
+					    </div>
+				    	<div data-role="fieldcontain">
+					        <label for="pass2" class="ui-hidden-accessible">Password:</label>
+							<input data-clear-btn="true" type="password" name="pass2" id="pass2" data-mini="true" placeholder="Password" required>
+     					</div>
+     					<div data-role="fieldcontain">
+					        <label for="pass2rep" class="ui-hidden-accessible">Repeat password:</label>
+							<input data-clear-btn="true" type="password" name="pass2rep" id="pass2rep" data-mini="true" placeholder="Repeat password" required>
+     					</div>
+						<div class="ui-field-contain">
+							<fieldset data-role="controlgroup">
+								<legend>Agree to the terms:</legend>
+								<input type="checkbox" name="agree" id="agree"/>
+								<label for="agree">I agree</label>
+							</fieldset>
+						</div>
+						<div class="ui-field-contain">
+							<input type="submit" class="ui-btn" value="Submit" data-mini="true">
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+			<div data-role="footer" class="footer" data-position="fixed">
+				<div data-role="navbar" data-id="footernav">
+					<ul>
+						<li><a href="about.html" class="ui-btn ui-icon-info ui-corner-all ui-btn-icon-top" data-mini="true">About</a></li>
+						<li><a href="contact.html" class="ui-btn ui-icon-mail ui-corner-all ui-btn-icon-top" data-mini="true">Contact</a></li>
+						<li><a href="login.html" class="ui-state-presist ui-btn-active ui-btn ui-icon-user ui-corner-all ui-btn-icon-top" data-mini="true">Account</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

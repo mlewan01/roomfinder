@@ -1,0 +1,40 @@
+.shareimage {
+	width: 5%;
+	height: 5%;
+	max-height: 50px;
+	max-width: 50px;
+	min-height: 30px;
+	min-width: 30px;
+}
+#sharelinks {
+	text-decoration: none;
+}
+#hotelid {
+	display: none;
+}
+div#confirmpopup-popup{
+	min-width: 200px;
+}
+div#imagepopup-popup{
+	min-width: 300px;
+	text-align:center;
+}
+.popupCloseIcon {
+	top: -25px!important;
+	right: -15px!important;
+}
+#image-property {
+	width: 210px;
+	height: 140px;
+}
+#imagepopup {
+	
+}
+.zeroSpace {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+#imagepopupid {
+	
+}
